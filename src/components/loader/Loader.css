@@ -1,0 +1,32 @@
+#loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent black */
+  backdrop-filter: blur(1px); /* blur effect */
+}
+
+.loader-spinner {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  border: 9px solid rgb(170, 170, 170); /* grey */
+  border-top: 9px solid #013047; /* green */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

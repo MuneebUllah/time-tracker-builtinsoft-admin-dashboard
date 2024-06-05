@@ -1,0 +1,31 @@
+.calander{
+    @media(max-width:768px){
+        width: 100%;
+
+    }
+}
+.daily-work{
+    gap: 6rem;
+    @media (max-width:768px){
+        justify-content: center;
+    }
+
+}
+
+.daily-work-data{
+    @media(max-width:768px){
+        width: 100%;
+
+    }
+}
+.progress{
+    position: relative;
+    width: 400px;
+    @media (max-width:768px) {
+        width: 70%;
+    }
+}
+.percentage{
+    position: absolute;
+    width: 100%;
+}
